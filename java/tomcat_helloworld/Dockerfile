@@ -22,6 +22,8 @@ ADD target/tomcathelloworld.war /usr/share/tomcat/webapps/
 
 EXPOSE 8080
 
-# CMD ["tomcat", "start"] 
+# CMD ["tomcat", "start"]
+
+CMD ["/usr/libexec/tomcat/server", "start"]  
 
 
