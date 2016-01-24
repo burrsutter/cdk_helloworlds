@@ -1,5 +1,6 @@
 # maven target
 target
+bin
 
 # Windows image file caches
 Thumbs.db
