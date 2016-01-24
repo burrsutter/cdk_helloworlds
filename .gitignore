@@ -1,6 +1,13 @@
 # maven target
 target
+
 bin
+
+# eclipse related
+.project
+.classpath
+.settings
+.tern-project
 
 # Windows image file caches
 Thumbs.db
