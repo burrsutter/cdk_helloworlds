@@ -11,6 +11,7 @@ RUN yum -y install java
 # /usr/lib/jvm/java-1.8.0/bin contains javac
 
 RUN yum -y install tomcat tomcat-webapps tomcat-admin-webapps
+RUN rm -fR /usr/share/tomcat/webapps/*
 
 # critical files are:
 # /usr/share/tomcat/bin contains bootstrap.jar
@@ -18,7 +19,7 @@ RUN yum -y install tomcat tomcat-webapps tomcat-admin-webapps
 # /usr/share/tomcat/webapps for .wars (ROOT, examples)
 # /var/log/tomcat contains catalina.out
 
-ADD target/tomcatspringmvc.war /usr/share/tomcat/webapps/
+COPY target/tomcat-spring-mvc.war /usr/share/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
