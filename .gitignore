@@ -9,6 +9,10 @@ bin
 .settings
 .tern-project
 
+# idea related
+.idea
+*.iml
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
